@@ -1,0 +1,145 @@
+body {
+  font-family: helvetica;
+  color: seashell;
+  opacity: .9;
+  background-color: black;
+  font-size: 22px;
+}
+
+/*centering text where needed*/
+.center {
+  text-align: center;
+}
+
+/* fix issue with sticky header covering part of section when clicking on links*/
+.anchor {
+  display: block;
+  height: 69px;
+  margin-top: -69px;
+  visibility: hidden;
+}
+
+/* fixed header with logo and nav, nav always seashell color*/
+.header {
+  display: flex;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: seashell;
+}
+
+.logo {
+  height: 50px;
+  padding-left: 10px;
+}
+
+ nav span {
+  padding: 10px;
+ }
+
+/*Mission statement in box with background picture*/
+.mission {
+  display: flex;
+  background: url(../pictures/mission-background.jpg);
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  margin: 69px 0 50px 0;
+  line-height: 18px;
+}
+
+.missionbox {
+  background-color: black;
+  height: auto;
+  width: 100%;
+}
+
+/*tea of the month, 5 pictures with captions*/
+.teaofmonth {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.teaofmonth1 {
+  display: flex;
+  justify-content: center;
+}
+
+.teaofmonth2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.teapic {
+  width: 300px;
+  height: 200px;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+/*3 location text boxes on background image*/
+.locations {
+  display: flex;
+  flex-direction: column;
+  background: url(../pictures/locations-background.jpg) no-repeat 0px -60px;
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationbox {
+  height: auto;
+  width: 33%;
+  background-color: black;
+  line-height: 35px;
+  box-sizing: border-box;
+}
+
+.row2 {
+  display: flex;
+  margin-bottom: 75px;
+  width: 100%;
+}
+
+.row1 {
+  margin-bottom: 15px;
+}
+
+.boxmargin {
+  margin: 0 20px 0 20px;
+}
+
+/*footer centered with copyright statement on the left side*/
+.footer {
+  height: 200px;
+}
+
+.alignleft {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.space {
+  margin: 10px 0 40px 0;
+}
